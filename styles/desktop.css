@@ -1,0 +1,94 @@
+@media(min-width: 800px) {
+    img.english {
+        width: 20%;
+    }
+
+}
+
+@media(min-width: 700px) {
+
+    /* Navbar */
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar-links {
+        display: flex;
+        width: auto;
+    }
+
+    .navbar-links ul {
+        display: flex;
+        flex-direction: row;
+    }
+    
+
+    .toggle-button {
+        display: none;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+    }
+
+    #section-a .content-text {
+        columns: 2;
+        column-gap: 2em;
+    }  
+
+    #section-a .content-text p {
+        display: inline-block;
+        padding-top: 0;
+    }
+
+    .content-wrap,
+    #section-b ul {
+        grid-column: 2/4;
+    }
+
+    #section-b ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    #section-b ul li {
+        width: 31%;
+        height: auto;
+        flex-grow: 1;
+        margin: 10px;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #slide-1:checked ~ #controls label:nth-child(2),
+    #slide-2:checked ~ #controls label:nth-child(3),
+    #slide-3:checked ~ #controls label:nth-child(4),
+    #slide-4:checked ~ #controls label:nth-child(1) {
+        /* background: url(https://image.flaticon.com/icons/svg/339/339918.svg) no-repeat;
+        float: right; */
+        margin: 0 -50px 0 0;
+        /* display: block; */
+    }
+
+    #slide-1:checked ~ #controls label:nth-last-child(1),
+    #slide-2:checked ~ #controls label:nth-last-child(4),
+    #slide-3:checked ~ #controls label:nth-last-child(3),
+    #slide-4:checked ~ #controls label:nth-last-child(2) {
+        /* background: url(https://image.flaticon.com/icons/svg/339/339876.svg) no-repeat; */
+        /* float: left; */
+        margin: 0 0 0 -50px;
+        /* display: block; */
+    }
+
+   #main-footer {
+       justify-content: center;
+   }
+}
