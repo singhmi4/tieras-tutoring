@@ -204,13 +204,14 @@
             <h2 class="content-title">Contact Us</h2>
             <p>If you would like more information on booking a session, please fill out the form below and we will get back to you as soon as possible!</p>
             <div class="form-content">
-                <form action="">
+                <form action="POST" data-netlify="true">
                     <h3><label for="name">Name</label></h3>
                     <input type="text" id="name" name="name" placeholder="Your name...">
                     <h3><label for="email">Email</label></h3>
                     <input type="text" id="email" name="email" placeholder="Your email...">
                     <h3><label for="message">Your Message</label></h3>
                     <textarea id="message" name="message" placeholder="What can we help you with?.."></textarea>
+                    <div data-netlify-recaptcha="true"></div>
                     <input type="submit" value="Submit">
                 </form>
             </div>
